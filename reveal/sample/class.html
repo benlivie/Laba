@@ -139,6 +139,79 @@ p#cat2  <p id="cat2"></p>
         </tr>
     </tbody>
 </table>
+
+<head>
+<style>
+<div id="layout">
+    <header class="line">
+        <div id="logo">
+            <span>Лого</span>
+        </div>
+        <div id="ads">
+            <span>Реклама</span>
+        </div>
+    </header>
+    layout {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .line {
+        width: 100%;
+        display: table;
+        text-align: center;
+        position: relative;
+        border: 1px solid black;
+    }
+    
+    .line div, .line main, .line aside{
+        border: 1px black solid;
+        vertical-align: middle;
+    }
+    
+    .line nav, .line footer {
+        border-right: 1px black solid;
+        border-left: 1px black solid;
+        border-bottom: 1px black solid;
+        vertical-align: middle;
+    }
+    
+    #logo, #ads {
+        display: table-cell;
+        height: 100px;
+        width: 298px;
+    }
+    #left, #right {
+        display: table-cell;
+        height: 400px;
+        width: 98px;
+    }
+    
+    #content {
+        display:table-cell;
+        height: 400px;
+        width: 200px;
+    }
+    #menu {
+        display:table-cell;
+        height: 50px;
+        width: auto;
+    }
+    
+    #footer {
+        display:table-cell;
+        height: 50px;
+        width: auto;
+    }
+    #logo span, #ads span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+</style>
+</div>
+</head>
+
+
 <form action="" method="post">
     <label for="fio">Фамилия, имя, отчество</label>
     <input type="text" name="fio" id="fio">
